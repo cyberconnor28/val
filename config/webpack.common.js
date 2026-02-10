@@ -12,8 +12,8 @@ module.exports = {
     buttons: './src/js/buttons.js'
   },
   output: {
-    path: path.resolve(__dirname, 'docs'),
-    filename: '[name].js'
+    filename: '[name].js',
+    path: path.resolve('.', 'docs')
   },
   module: {
     rules: [
