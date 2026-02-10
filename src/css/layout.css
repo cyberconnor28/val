@@ -1,0 +1,92 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'kudry', Arial, Helvetica, sans-serif;
+    color: #E6BE51;
+}
+
+.main1{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(../img/background1.svg);
+}
+
+.background1{
+    width: 105vw;
+    height: auto;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.text1{
+    font-size: 3vw;
+    position: absolute;
+}
+
+.heart1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 31vw;
+}
+
+.heart2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 31vw;
+}
+
+.heart3{
+    position: absolute;
+    right: calc(12vw/3);
+    top: calc(10vw/3);
+    width: 9vw;
+}
+
+.heart4{
+    position: absolute;
+    left: calc(12vw/3);
+    bottom: calc(10vw/3);
+    width: 9vw;
+}
+
+.text1_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.5vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #E6BE51;
+}
+
+.starts{
+    width: 65vw;
+}
+
+.cat-cont1{
+    border-radius: 50%;
+    border: 3px solid #E6BE51;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    margin-top: 10vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cat-cont1 img{
+    width: 100%;
+    height: auto;
+}

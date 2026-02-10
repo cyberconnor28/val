@@ -3,51 +3,68 @@ const webpack = require('webpack')
 const path = require('path')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const htmlPages = require('./webpack.pages')
 // const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: './src/js/index.js'
+  },
   output: {
-    path: path.resolve(__dirname, 'dev_build'),
-    filename: 'index.js'
+    path: path.resolve(__dirname, 'docs'),
+    filename: '[name].js'
   },
   module: {
     rules: [
       {
-        test: /\.s?css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-      },
-      {
-        test: /\.js?$/,
+        test: /\.(js|jsx)$/i,
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
         }
       },
+
+      {
+        test: /\.s?css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+      },
+
       {
         test: /\.html$/i,
         loader: 'html-loader'
       },
+
       {
         test: /\.(png|svg|jpg|jpeg|webp|gif)/,
-        type: 'asset/resource'
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        }
       },
+
       {
-        test: /\.(ttf|otf|woff|woff2)$/i,
-        type: 'asset/resource'
+        test: /\.(ttf|otf|woff\woff2)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]'
+        }
       }
     ]
   },
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
+    // minimizer: [new CssMinimizerPlugin()]
   },
   plugins: [
     new MiniCssExtractPlugin(),
-    new HtmlWebpackPlugin({ template: './src/index.html' })
+    ...htmlPages
     // new CopyPlugin({
     //   patterns: [
-    //     { from: 'source', to: 'dest' },
-    //     { from: 'other', to: 'public' }
-    //   ]
-    // })
+    //     { from: "source", to: "dest" },
+    //     { from: "other", to: "public" },
+    //   ],
+    // }),
   ]
 }
