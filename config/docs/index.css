@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+    font-family: 'kudry';
+    src: url(fonts/d1f886c2533c6e739d48.otf);
+    font-weight: 700;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'kudry', Arial, Helvetica, sans-serif;
+    color: #E6BE51;
+}
+
+.main1{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(images/853f1108806d5e7f757a.svg);
+}
+
+.background1{
+    width: 105vw;
+    height: auto;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.text1{
+    font-size: 3vw;
+    position: absolute;
+}
+
+.heart1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 31vw;
+}
+
+.heart2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 31vw;
+}
+
+.heart3{
+    position: absolute;
+    right: calc(12vw/3);
+    top: calc(10vw/3);
+    width: 9vw;
+}
+
+.heart4{
+    position: absolute;
+    left: calc(12vw/3);
+    bottom: calc(10vw/3);
+    width: 9vw;
+}
+
+.text1_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.5vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #E6BE51;
+}
+
+.starts{
+    width: 65vw;
+}
+
+.cat-cont1{
+    border-radius: 50%;
+    border: 3px solid #E6BE51;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    margin-top: 10vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cat-cont1 img{
+    width: 100%;
+    height: auto;
+}
+
