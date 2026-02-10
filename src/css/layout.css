@@ -16,15 +16,9 @@ body{
     flex-wrap: wrap;
     background-image: url(../img/background1.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.background1{
-    width: 105vw;
-    height: auto;
-    position: absolute;
-    left: 0;
-    z-index: -1;
-}
 
 .text1{
     font-size: 3vw;
