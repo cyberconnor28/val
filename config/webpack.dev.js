@@ -6,16 +6,10 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    static: {
-      directory: path.resolve(__dirname, 'docs'),
-      watch: true
-    },
-    hot: true,
-    open: true
+    static: './dev_build'
   },
   output: {
     path: path.resolve('.', 'dev_build'),
-    filename: 'index.js',
     clean: true
   }
 })
