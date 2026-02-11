@@ -18,7 +18,8 @@ function createPages(template, filename) {
 const htmlPages = [
   createPages('./src/index.html', './index.html', ['index', 'buttons']),
 
-  createPages('./src/pages/hello.html', './pages/hello.html', ['index', 'buttons'])
+  createPages('./src/pages/hello.html', './pages/hello.html', ['index', 'buttons']),
+  createPages('./src/pages/hearts.html', './pages/hearts.html', ['index', 'buttons'])
 ]
 
 module.exports = htmlPages

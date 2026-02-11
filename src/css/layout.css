@@ -23,6 +23,7 @@ body{
 .text1{
     font-size: 3vw;
     position: absolute;
+    top: 20vw;
 }
 
 .heart1{
@@ -56,7 +57,7 @@ body{
 .text1_2{
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -84,4 +85,83 @@ body{
 .cat-cont1 img{
     width: 100%;
     height: auto;
+}
+
+.main2{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(../img/background2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cat-cont2{
+    border-radius: 50%;
+    border: 3px solid #E6BE51;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    margin-top: 10vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cat-cont2 img{
+    width: 100%;
+    height: auto;
+}
+
+.text2{
+    font-size: 3vw;
+    position: absolute;
+    top: 11vw;
+}
+
+.text2_2{
+    font-size: 2vw;
+    position: absolute;
+    top: 15vw;
+}
+
+.text2_3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.2vw;
+    position: absolute;
+    top: calc(10vw/3);
+    left: calc(10vw/3);
+    color: #E6BE51;
+}
+
+.text2_4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.2vw;
+    position: absolute;
+    top: calc(10vw/3);
+    right: calc(10vw/3);
+    color: #E6BE51;
+}
+
+.doodle2-1{
+    width: 25vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: scale-1 5s linear infinite;
+}
+
+.doodle2-2{
+    width: 20vw;
+    position: absolute;
+    right: 0;
+    animation: scale-1 12s linear infinite;
 }
