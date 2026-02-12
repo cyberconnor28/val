@@ -1,7 +1,7 @@
-document.querySelector('.cat-cont1').addEventListener('click', () => {
-    window.location.href = 'pages/hello.html'
+document.querySelector('.cat-cont2').addEventListener('click', () => {
+    window.location.href = 'hearts.html'
 })
 
-document.querySelector('.cat-cont2'). addEventListener('click', () => {
-    window.location.href = 'hearts.html'
+document.querySelector('.heart3-3').addEventListener('click', () => {
+    window.location.href = 'time.html'
 })
