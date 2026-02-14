@@ -288,6 +288,26 @@ body{
     position: absolute;
 }
 
+.heart3-1:hover{
+    color: #CF5255;
+}
+
+.heart3-2:hover{
+    color: #CF5255;
+}
+
+.heart3-3:hover{
+    color: #CF5255;
+}
+
+.heart3-4:hover{
+    color: #CF5255;
+}
+
+.heart3-5:hover{
+    color: #CF5255;
+}
+
 .main4{
     width: 100vw;
     height: 100vh;
@@ -297,8 +317,8 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     background-image: url(../img/background4.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat: repeat;
+    background-size: 50%;
 }
 
 .heart4-1{
@@ -323,8 +343,273 @@ body{
     position: absolute;
 }
 
+.heart4-1:hover{
+    color: #33008B;
+}
+
 .text4-1{
     font-size: 3vw;
     position: absolute;
     top: 10vw;
+}
+
+#since{
+    width: 80vw;
+    height: auto;
+    position: absolute;
+    top: 20vw;
+    color: white;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text4-2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1.2vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #E6BE51;
+}
+
+.main5{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(../img/background5.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.mail{
+    width: 60vw;
+    height: 15vw;
+    padding: 2vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6BE51;
+    color: #33008B;
+    font-size: 2vw;
+    flex-direction: column;
+    border-radius: 3vw;
+}
+
+.hel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.main6{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(../img/background6.svg);
+    background-size: 10%;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.text6-1{
+    font-size: 3vw;
+    color: #33008B;
+    -webkit-text-stroke: #33008B 2px;
+    position: absolute;
+    top: calc(10vw/3);
+}
+
+.drag{
+    cursor: pointer;
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 1.2vw;
+    color: #33008B;
+}
+
+.list2{
+    left: 3vw;
+    top: 5vw;
+}
+
+.drag img{
+    width: 100%;
+}
+
+.drag p{
+    position: absolute;
+}
+
+.list3{
+    right: 10vw;
+    top: 14vw;
+}
+
+.list4{
+    left: 7vw;
+    top: 25vw;
+}
+
+.list5{
+    left: 13vw;
+    top: 15vw;
+}
+
+.list6{
+    right: 7vw;
+    top: 25vw;
+}
+
+.list7{
+    right: 15vw;
+    top: 35vw;
+}
+
+.list7 p{
+    margin-left: 10%;
+}
+
+.list8{
+    left: 13vw;
+    top: 35vw;
+}
+
+.list9{
+    left: 30vw;
+    top: 37vw;
+}
+
+.list10{
+    left: 50vw;
+    top: 36vw;
+}
+
+.list11{
+    right: 1vw;
+    top: 2vw;
+}
+
+.list11 p{
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.list12{
+    right: 30vw;
+    top: 10vw;
+}
+
+.list13{
+    left: 30vw;
+    top: 8vw;
+}
+
+.list14{
+    left: 25vw;
+    top: 25vw;
+}
+
+.list15{
+    right: 25vw;
+    top: 26vw;
+}
+
+.list15 p{
+    margin-left: 10%;
+}
+
+.main7{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(../img/background7.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    flex-direction: column;
+}
+
+.main7 p{
+    font-size: 1.5vw;
+    position: absolute;
+}
+
+.text7-1{
+    top: 10vw;
+}
+
+.text7-2{
+    top: 13vw;
+}
+
+.main7 a{
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.main7 a:hover{
+    color: #CF5255;
+}
+
+.main8{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #CF5255;
+    flex-direction: column;
+}
+
+.weimg{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+}
+
+.like{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    right: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2vw;
+}
+
+.like img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.like p{
+    margin-top: 0.2vw;
 }
