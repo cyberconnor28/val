@@ -1,5 +1,8 @@
 import '../css/style.css'
 
-document.querySelector('.cat-cont1').addEventListener('click', () => {
-    window.location.href = 'pages/hello.html'
-})
+const cat1 = document.querySelector('.cat-cont1');
+if (cat1) {
+  cat1.addEventListener('click', () => {
+    window.location.href = 'pages/hello.html';
+  });
+}
